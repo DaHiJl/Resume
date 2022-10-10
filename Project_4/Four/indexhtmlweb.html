@@ -1,0 +1,663 @@
+<?
+    header(header:'Location: furniture.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Только CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styleweb.css">
+</head>
+<body>
+    <header class="headler">
+        <div class="conteiner">
+            <div class="headler_block">
+                <div class="headler_body">
+                    <div class="headler_logo">
+                        <a class="logo">
+                            <img href="/" class="logo_img" src="img/logoweb.svg">
+                        </a>
+                        <a href="#" class="logo_text">
+                            Мебель от производителя
+                        </a>
+                    </div>
+                    <div class="headler_naw">
+                        <div class="poisk">
+                            <form>
+                                <input type="text" placeholder="Поиск по сайту">
+                                <button type="submit">
+                                    <img href="/" src="img/search-icon.png">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="language">
+                            <a href="/" class="language_logo">
+                                <img class="ru_img" src="img/ru-icon.jpg"></a>
+                            <a href="/" class="language_logo">
+                                <img class="pl_img" src="img/pl-icon.jpg"></a>
+                            <a href="/" class="language_logo">
+                                <img class="chn_img" src="img/chn-icon.jpg"></a>
+                            <a href="/" class="language_logo">
+                                <img class="en_img" src="img/en-icon.jpg"></a>
+                            <a href="/" class="language_logo">
+                                <img class="de_img" src="img/de-icon.jpg"></a>
+                        </div>
+                        <div class="city">
+                            <div class="dropdown">
+                                <button class="dropbtn"><span>Ваш город:</span><br>Волгоград</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Москва</a>
+                                    <a href="#">Ростов-на-Дону</a>
+                                    <a href="#">Брянск</a>
+                                    <a href="#">Орел</a>
+                                    <a href="#">Курск</a>
+                                    <a href="#">Нижний<br>Новнород</a>
+                                    <a href="#">Все города</a>
+                                </div>
+                            </div>
+                            <div class="city_add">
+                                Адреса магазинов
+                            </div>
+                            <div class="city_contacts">
+                                Контакты
+                            </div>
+                        </div>
+                        <div class="registery">
+                            <div class="vhod">
+                                <div class="vhod_icon">
+                                    <img src="">
+                                </div>
+                                <div class="vhod_text">
+                                    Войти
+                                </div>
+                                <div class="vhod_title">
+                                    Регестрация
+                                </div>
+                            </div>
+                            <div class="number">
+                                <div class="dropdown">
+                                    <button class="dropbtn brn9">8 844-260-37-82</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Пн-Пт09:00-18:00</a>
+                                        <a href="#">Заказать звонок</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo_btm">
+                            <a href="#" class="btn">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sectionnaw">
+        <div class="conteiner">
+            <div class="sectionnawblock">
+                <div class="sectionnaw1">
+                    <nav class="catalog">
+                        <ul class="catalogtext">
+                            <li><a class="catalogtext12" href="#">Каталог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sectionnaw2">
+                    <nav class="nav">
+                        <a class="nav_link" href="#">О нас</a>
+                        <a class="nav_link" href="#">Партнерство</a>
+                        <a class="nav_link" href="#">Доставка и сборка</a>
+                        <a class="nav_link" href="#">Новости</a>
+                        <a class="linkred" href="#">Вакансии</a>
+                        <a class="nav_link" href="#">Контакты</a>
+                        <a class="nav_link" href="#">About</a>
+                        <a class="linkbtm" href="#">Корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="liderblock">
+        <div class="conteiner">
+            <div class="liderblock1">
+                <div class="liderblocknaw">
+                    <div class="lider_block">
+                        <div class="sale">
+                            <div class="logosale">
+                                <img src="img/sale.png">
+                            </div>
+                            <div class="saletext">
+                                Акции
+                            </div>
+                        </div>
+                        <div class="new">
+                            <div class="logonew">
+                                <img src="img/new.png">
+                            </div>
+                            <div class="newtext">
+                                Новинки
+                            </div>
+                        </div>
+                        <div class="living">
+                            <div class="dropdownliving">
+                                <div class="livingbtm">
+                                    <a><img class="logoliving" src="img/living.png"></a>
+                                    <a class="dropbtnliving">Мебель для гостинной</a>
+                                </div>
+                                <div class="dropdown-contentliving">
+                                    <a href="#">Стенки</a>
+                                    <a href="#">Модули</a>
+                                    <a href="#">Тумбы</a>
+                                    <a href="#">Полки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="living">
+                            <div class="dropdownliving">
+                                <div class="livingbtm">
+                                    <a><img class="logoliving" src="img/a6ec558d30cb72fd92845bb062ba07d8.png"></a>
+                                    <a class="dropbtnliving">Мебель для спальни</a>
+                                </div>
+                                <div class="dropdown-contentliving">
+                                    <a href="#">Стенки</a>
+                                    <a href="#">Модули</a>
+                                    <a href="#">Тумбы</a>
+                                    <a href="#">Полки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="living">
+                            <div class="dropdownliving">
+                                <div class="livingbtm">
+                                    <a><img class="logoliving" src="img/twobeed.png"></a>
+                                    <a class="dropbtnliving">Мебель для детской</a>
+                                </div>
+                                <div class="dropdown-contentliving">
+                                    <a href="#">Стенки</a>
+                                    <a href="#">Модули</a>
+                                    <a href="#">Тумбы</a>
+                                    <a href="#">Полки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="living">
+                            <div class="dropdownliving">
+                                <div class="livingbtm">
+                                    <a><img class="logoliving" src="img/kitchen.png"></a>
+                                    <a class="dropbtnliving">Мебель для прихожей</a>
+                                </div>
+                                <div class="dropdown-contentliving">
+                                    <a href="#">Стенки</a>
+                                    <a href="#">Модули</a>
+                                    <a href="#">Тумбы</a>
+                                    <a href="#">Полки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="living">
+                            <div class="dropdownliving">
+                                <div class="livingbtm">
+                                    <a><img class="logoliving" src="img/divan.png"></a>
+                                    <a class="dropbtnliving">Мягкая мебель</a>
+                                </div>
+                                <div class="dropdown-contentliving">
+                                    <a href="#">Стенки</a>
+                                    <a href="#">Модули</a>
+                                    <a href="#">Тумбы</a>
+                                    <a href="#">Полки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="living">
+                            <div class="dropdownliving">
+                                <div class="livingbtm">
+                                    <a><img class="logoliving" src="img/matras.png"></a>
+                                    <a class="dropbtnliving">Матрасы</a>
+                                </div>
+                                <div class="dropdown-contentliving">
+                                    <a href="#">Стенки</a>
+                                    <a href="#">Модули</a>
+                                    <a href="#">Тумбы</a>
+                                    <a href="#">Полки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new">
+                            <div class="logonew">
+                                <img src="img/zakaz.png">
+                            </div>
+                            <div class="newtext">
+                                Мебель на заказ
+                            </div>
+                        </div>
+                        <div class="new">
+                            <div class="logonew">
+                                <img src="img/zerkalo.png">
+                            </div>
+                            <div class="newtext">
+                                Зеркала
+                            </div>
+                        </div>
+                        <div class="living">
+                            <div class="dropdownliving">
+                                <div class="livingbtm">
+                                    <a><img class="logoliving" src="img/teble.png"></a>
+                                    <a class="dropbtnliving">Столы</a>
+                                </div>
+                                <div class="dropdown-contentliving">
+                                    <a href="#">Стенки</a>
+                                    <a href="#">Модули</a>
+                                    <a href="#">Тумбы</a>
+                                    <a href="#">Полки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new">
+                            <div class="logonew">
+                                <img src="img/comodu.png">
+                            </div>
+                            <div class="newtext">
+                                Комоды
+                            </div>
+                        </div>
+                        <div class="new">
+                            <div class="logonew">
+                                <img src="img/beed.png">
+                            </div>
+                            <div class="newtext">
+                                Кровати
+                            </div>
+                        </div>
+                        <div class="new">
+                            <div class="logonew">
+                                <img src="img/hcaf.png">
+                            </div>
+                            <div class="newtext">
+                                Шкафы
+                            </div>
+                        </div>
+                        <div class="new">
+                            <div class="logonew">
+                                <img src="img/tubla.png">
+                            </div>
+                            <div class="newtext">
+                                Тумбы
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon_pdf">
+                        <div class="pdf_text">
+                            <img src="img/pdf.png">
+                            <a class="pdf_color" href="#">Каталог RU</a>
+                        </div>
+                        <div class="pdf_text">
+                            <img src="img/pdf.png">
+                            <a class="pdf_color" href="#">Каталог EN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="liderblockbedroom">
+                    <div class="put">
+                        <div class="nameput">
+                            Главная
+                        </div>
+                        <div class="vlojen">
+                            >
+                        </div>
+                        <div class="nameput">
+                            Каталог
+                        </div>
+                        <div class="vlojen">
+                            >
+                        </div>
+                        <div class="nameput">
+                            Мебель для спальни
+                        </div>
+                        <div class="vlojen">
+                            >
+                        </div>
+                        <div class="nameput">
+                            Кровати из массива дерева
+                        </div>
+                        <div class="vlojen">
+                            >
+                        </div>
+                        <div class="nameput2">
+                            Кровать "Людмила 17" Орех светлый с патиной
+                        </div>
+                    </div>
+                    <div class="Zagolovok">
+                        Кровать "Людмила 17" Орех светлый с патиной
+                    </div>
+                    <div class="bed_block22">
+                        <div class="bed_body1">
+                            <div>
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/carucel1.jpg" class="d-block" height="450px" width="670px" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/carucel2..jpg" class="d-block" height="450px" width="670px" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Предыдущий</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Следующий</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="minu_box">
+                                    <div class="bed_info">
+                                        <div class="bed_img">
+                                            <div class="bed_bobo active1">
+                                                <a class="img_bed1" href="#"><img class="img_bed" src="img/carucel1.jpg"></a>
+                                            </div>
+                                            <div class="bed_bobo">
+                                                <a class="img_bed1" href="#"><img class="img_bed" src="img/carucel2..jpg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="drop-down">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Характеристики</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Описание</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Доставка и сборка</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <p>Ширина.......................................................................................................................................................................1290</p>
+                                        <p>Глубина.......................................................................................................................................................................2140</p>
+                                        <p>Высота..........................................................................................................................................................................970</p>
+                                        <p>Отделка........................................................................................................Нитроцеллюлозный лак + патина</p>
+                                        <p>Размеры (ШхГхВ), мм....................................................................................1290/1490/1690х2140х970 мм</p>
+                                        <p>Материал................................................................................................................................Массив Сосны, МДФ</p>
+                                        <p>Спальное место.........................................................................................................1200/1400/1600х2000 мм</p>
+                                        <p>Масса, кг................................................................................................................................................48,2/53,8/59,4</p>
+                                        <p>Объем, м3...............................................................................................................................................0,23/0,26/0,3</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <p><span>*</span>Цена на кровать указана без стоимости матраса</p>
+
+                                        При оформлении спальни главное — соблюдать гармонию во всем: от цветовых сочетаний до формы мебели.
+                                        Мы всегда учитываем это правило при разработке наших коллекций и подборе материалов.
+                                        Кровать «Людмила-17» Орех светлый с патиной — яркий пример реализации данной концепции. 
+                                        В таком цветовом исполнении мебель для спальни можно вписать в самые разные интерьерные стили: 
+                                        цветовая гамма отлично сочетается с другими оттенками. А благодаря компактности останется место 
+                                        и для других функциональных предметов, которые обязательно должны быть в комнате. Вы приобретаете не просто мебель, 
+                                        а возможность создать уникальное пространство, в котором сможете полноценно отдыхать. 
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                        <p>Уважаемые покупатели, при оформлении заказа в интернет-магазине вы можете самостоятельно выбрать доставку на указанный адрес либо самовывоз товара.</p>
+                                        <p>Самовывоз осуществляется самостоятельно напрямую с фабрики в Брянске. Самовывоз с фабрики производится в рабочие дни с 8:00 до 16:30 (перерыв с 12:00 до 13:00), в субботу с 8:00 до 11:30.</p>
+                                        <p>После оформления заказа через интернет-магазин в других регионах с вами свяжется наш менеджер и рассчитает стоимость доставки мебели.</p>
+                                        <p><h4>Гарантийные обязательства после сборки мебели</h4></p>
+                                        <p>Гарантийный срок устанавливается производителем и
+                                            начинается с момента фактической передачи товара покупателю.
+                                            Продавец не несет ответственности за недостатки товара, если они
+                                            возникли по вине покупателя в результате транспортировки при самовывозе
+                                            или в результате нарушения правил эксплуатации либо по истечению гарантийного
+                                            срока, если иное не установлено законодательством РФ.</p> 
+                                    </div>
+                                </div>                                  
+                            </div>
+                        </div>
+                        <div class="bed_body2">
+                            <div class="price_block">
+                                <div class="price_body">
+                                    <div class="price_bed">
+                                        21 490 руб / шт
+                                    </div>
+                                    <div class="choice">
+                                        Выберите размер: 
+                                    </div>
+                                    <div class="price_btm">
+                                        <div class="pricebtm">
+                                            <a class="btmprice" href="#">1200*1200</a>
+                                        </div>
+                                        <div class="pricebtm">
+                                            <a class="btmprice" href="#">1400*2000</a>
+                                        </div>
+                                        <div class="pricebtm">
+                                            <a class="btmprice" href="#">1600*2000</a>
+                                        </div>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="quantity_body">
+                                            <div class="plus">
+                                                -
+                                            </div>
+                                            <div class="plus1">
+                                                1
+                                            </div>
+                                            <div class="plus">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="quantity_btm">
+                                            <a class="quantity_btmred" href="#">В Корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="favorites">
+                                        <div class="head">
+                                            heart
+                                        </div>
+                                        <div class="bay">
+                                            <a href="#" class="buy">Купить в 1 клик</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <div class="social_body">
+                                    Поделиться:
+                                </div>
+                                <div class="social_img">
+                                    <a class="img_s">
+                                        <img class="img_s" src="img/vk1.png"></a>
+                                    <a class="img_s">
+                                        <img class="img_s" src="img/telegram.png"></a>
+                                    <a class="img_s">
+                                        <img class="img_s" src="img/odnoklassniki.png"></a>
+                                    <a class="img_s">
+                                        <img class="img_s" src="img/viber.png"></a>
+                                </div>
+                            </div>
+                            <div class="minu">
+                                <div class="text_minu">
+                                    Все товары коллекции
+                                </div>
+                                <div class="coloms">
+                                    <div class="coloms_body">
+                                        <div class="coloms1">
+                                            <div class="colums_img">
+                                                <img src="img/carucel2..jpg" width="136px" height="250px">
+                                            </div>
+                                            <div class="colums_title">
+                                                Кровать "Людмила 17" Ясень емчужный с патиной
+                                            </div>
+                                            <div class="colums_size">
+                                                1290/1490/1690х2140х970 мм
+                                            </div>
+                                            <div class="title_price">
+                                                от 23 060 руб
+                                            </div>
+                                        </div>
+                                        <div class="colums2">
+                                            <div class="colums_img">
+                                                <img src="img/carucel2..jpg" width="136px" height="250px">
+                                            </div>
+                                            <div class="colums_title">
+                                                Кровать "Людмила 17" Ясень емчужный с патиной
+                                            </div>
+                                            <div class="colums_size">
+                                                1290/1490/1690х2140х970 мм
+                                            </div>
+                                            <div class="title_price">
+                                                от 23 060 руб
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_body">
+            <div class="foter_img">
+                <div class="headler_logo">
+                    <a class="logo">
+                        <img href="/" class="logo_img" src="img/logoweb.svg">
+                    </a>
+                    <a href="#" class="logo_text">
+                        Мебель от производителя
+                    </a>
+                </div>
+            </div>
+            <div class="footer_block">
+                <div class="footer_text">
+                    <div class="footer_title">
+                        <a class="footer_title_color" href="#">Контакты</a>
+                    </div>
+                    <div class="footer_number">
+                        <a class="footer_number_color" href="#">8 844 844-260-37-82</a>
+                    </div>
+                    <div class="footer_contact">
+                        ул.Курчатова, 20<br>
+                        ул. Никитина, 2 (склад)
+                    </div>
+                    <div class="carta_footer">
+                        <a class="footer_number_color" href="#">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_block">
+                <div class="footer_text hi">
+                    <div class="footer_title">
+                        <a class="footer_title_color" href="#">Адреса магазинов</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_block">
+                <div class="footer_text">
+                    <div class="footer_title">
+                        <a class="footer_title_color" href="#">Партнерам</a>
+                    </div>
+                    <div class="footer_partner po">
+                        <a class="footer_partner_color" href="#">Партнерство</a>
+                    </div>
+                    <div class="footer_contact">
+                        Присоединяйтесь к нам в соцсетях:
+                    </div>
+                    <div class="footer_imf">
+                        <a class="footer_img_1" href="#"><img class="footer_img_1" src="img/vk1.png"></a>
+                        <a class="footer_img_1" href="#"><img class="footer_img_1" src="img/telegram.png"></a>
+                        <a class="footer_img_1" href="#"><img class="footer_img_1" src="img/viber.png"></a>
+                        <a class="footer_img_1" href="#"><img class="footer_img_1" src="img/odnoklassniki.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_block">
+                <div class="footer_text">
+                    <div class="footer_title">
+                        <a class="footer_title_color" href="#">Информация</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">О нас</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Вакансии</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Новости</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Доставка и сбор</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Договор-оферта</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Возврат товара</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Оформление заказа</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Отзывы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_block">
+                <div class="footer_text ui">
+                    <div class="footer_title ot">
+                        <a class="footer_title_color" href="#">Каталог</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Мебель для гостинных</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Мебель для прихожей</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Мебель для детской</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Мебель для спальни</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Мягкая мебель</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Обеденные столы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_block io">
+                <div class="footer_text">
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Матрасы</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Зеркала</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Комоды</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Кровати</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Шкафы</a>
+                    </div>
+                    <div class="footer_partner">
+                        <a class="footer_partner_color" href="#">Изготовление мебели</a>
+                    </div>
+                </div>
+            </div>          
+        </div>    
+    </footer>
+</body>
+</html>
