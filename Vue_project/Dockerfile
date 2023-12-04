@@ -10,4 +10,7 @@ COPY . registration_front
 
 RUN cd registration_front && npm install
 RUN cd registration_front && npm install @vitejs/plugin-vue pinia vue vue-loader vue-router unocss
+
+EXPOSE 5173
+
 CMD cd registration_front && npm run dev

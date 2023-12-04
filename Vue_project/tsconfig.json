@@ -1,5 +1,9 @@
 {
-  "files": [],
+  "files": [
+    "./src/components/Custominput.vue",
+    "./src/components/Checkbox.vue",
+    "./src/components/RadioButton.vue",
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
