@@ -3,6 +3,11 @@
     "./src/components/Custominput.vue",
     "./src/components/Checkbox.vue",
     "./src/components/RadioButton.vue",
+    "./src/views/RegistrationComplete.vue",
+    "./src/views/Authorisation.vue",
+    "./src/views/MainPage.vue",
+    "./src/views/Registration.vue",
+    "./src/views/ErrorPackage.vue",
   ],
   "references": [
     {

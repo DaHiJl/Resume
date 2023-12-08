@@ -10,5 +10,6 @@ export default defineConfig({
         ['input-margin', {margin: '0 18px'}],
         ['input-icon-top', {top: '18px'}],
         ['input-icon-right', {right: '30px'}],
+        ['margin-top-12', {margin: '12% 0 0 0'}],
     ],
 })

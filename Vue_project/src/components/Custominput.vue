@@ -54,14 +54,14 @@ const updateValue = (e) => {
 }
 
 const options = reactive({
-  mask: ref(props.mask),
-  eager: true
+    mask: ref(props.mask),
+    eager: true
 })
 </script>
 
 <template>
-    <div class="flex mb-5 tooltip-group relative">
-        <img v-if="requiredStar == true" src="../assets/star.svg" />
+    <div class="flex mb-5 tooltip-group relative input-block">
+        <img v-if="requiredStar == true" src="../assets/star.svg" class="star"/>
         <div class="relative">
             <input
                 :id="name"
@@ -71,7 +71,7 @@ const options = reactive({
                 :placeholder="placeholder" 
                 @input="updateValue"
                 class="input border-rd-10 text-color-white input-padding input-margin submain-background-color font-size-8 border-0"
-                :class="error.length > 0 ? 'borderErrors' : ''"
+                :class="error.length > 0 ? 'border-errors' : ''"
                 v-maska:[options]
             >
             <img v-if="(custom_type == 'password') && (type == 'password')" @click="custom_type = 'text'" class='input-icon absolute input-icon-top input-icon-right' src="../assets/eye.svg"/>
@@ -83,7 +83,7 @@ const options = reactive({
         </div>
     </div>
     <TransitionGroup>
-        <div v-for="element of error" :key="element.$uid" class="mb-5 flex mt-5 font-size-8 errorMessage error-message-color-text">
+        <div v-for="element of error" :key="element.$uid" class="mb-5 flex mt-5 font-size-8 error-message error-message-color-text">
             {{ element.$message }}
         </div>
     </TransitionGroup>
@@ -92,14 +92,26 @@ const options = reactive({
 <style scoped>
 .input{
     background: #373737;
+    /* outline: 4px solid #373737;
+    outline-offset: -1px;
+    color: #FFFFFF; */
 }
-.errorMessage{
+.star{
+    width: 16px;
+}
+.error-message{
     margin-left: 52px;
 }
-.borderErrors{
+.border-errors{
     border: 2px solid #F47A7A;
 }
-
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    box-shadow: 40px 40px 40px 100px #373737 inset !important;
+    color: #FFFFFF !important;
+} */
 .tooltip{
   padding: 10px;
   border-top-right-radius: 20px;
@@ -118,21 +130,48 @@ const options = reactive({
 }
 
 @media (max-width: 1440px) {
-  .tooltip{
-    left: 0;
-    top: 100%;
-    z-index: 999;
-    font-size: 32px;
-    width: 100%;
-  }
-  /* .answer {
-    margin-right: 10px;
-  } */
+    .tooltip{
+        left: 34px;
+        top: 100%;
+        z-index: 999;
+        font-size: 32px;
+        width: 80%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 20px;
+    }
 }
-
 @media (max-width: 768px) {
-  .tooltip{
-    left: -2%;
-  }
+    .star{
+    width: 8px;
+}
+    .tooltip{
+        left: -2%;
+        font-size: 16px;
+        width: 100%;
+    }
+    .input-block{
+        max-width: 350px;
+    }
+    .input-icon {
+        width: 24px;
+    }
+    .input-icon-right {
+        right: 36px;
+    }
+    .input-icon-top {
+        top: 16px;
+    }
+    .answer{
+        width: 26px;
+    }
+    .error-message{
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .input{
+        font-size: 20px;
+        margin: 0 10px 0 8px;
+    }
 }
 </style>
