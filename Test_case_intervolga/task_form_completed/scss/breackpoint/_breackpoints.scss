@@ -1,0 +1,11 @@
+@mixin sm {
+    @media (max-width: map-get($breakpoints, sm)){
+        @content;
+    }
+}
+
+@mixin sm-u {
+    @media (min-width: map-get($breakpoints, sm)){
+        @content;
+    }
+}

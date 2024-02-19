@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.wrapper .header {
+  overflow: auto;
+  resize: vertical;
+  height: 50px;
+}
+.wrapper .block {
+  background: #FFFFFF;
+  flex: 1 0 auto;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .wrapper .block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.wrapper .block__panel--small {
+  background: #e0120b;
+  float: left;
+  clear: both;
+  overflow: auto;
+  resize: vertical;
+}
+@media (max-width: 1024px) {
+  .wrapper .block__panel--small {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper .block__panel--small {
+    width: 20%;
+  }
+}
+.wrapper .block__panel--small-last {
+  background: #32d611;
+  float: left;
+  overflow: auto;
+  resize: vertical;
+}
+@media (max-width: 1024px) {
+  .wrapper .block__panel--small-last {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper .block__panel--small-last {
+    width: 20%;
+  }
+}
+.wrapper .block__content--large {
+  float: right;
+  overflow: auto;
+  resize: vertical;
+  background: #f2fa02;
+}
+@media (max-width: 1024px) {
+  .wrapper .block__content--large {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper .block__content--large {
+    width: 80%;
+  }
+}
+.wrapper .block__content--large .content__item--position {
+  float: left;
+  margin: 30px 30px 20px 0;
+}
+.wrapper .footer {
+  overflow: auto;
+  resize: vertical;
+  height: 50px;
+}
+
+div {
+  background: #b2b3ad;
+}/*# sourceMappingURL=main.css.map */

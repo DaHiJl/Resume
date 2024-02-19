@@ -1,0 +1,14 @@
+@mixin input{
+    font-family: "Inconsolata", monospace;
+    border: 2px solid $colorBlack;
+    padding: 20px 16px;
+    font-size: 18px;
+}
+
+@mixin button{
+    font-family: "Inconsolata", monospace;
+    padding: 24px 50px;
+    border-radius: 10px;
+    border: 2px solid $colorBlack;
+    font-size: 18px;
+}

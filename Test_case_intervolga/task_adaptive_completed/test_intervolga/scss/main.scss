@@ -1,0 +1,77 @@
+@import "./base/_base.scss";
+@import "./breakpoint/breakpionts";
+@import "./breakpoint/vars";
+@import "./color/_colors";
+@import "./mixin/mixins";
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    .header{
+        @include position;
+        height: 50px;
+    }
+    .block{
+        background: $colorWhite;
+        flex: 1 0 auto;
+        width: 100%;
+        @include lg {
+            display: flex;
+            flex-direction: column;
+        }
+        &__panel{
+            &--small{
+                background: $colorRed;
+                float: left;
+                clear: both;
+                @include position;
+                @include lg{
+                    width: 100%;
+                }
+                @include lg-u{
+                    width: 20%;
+                }
+            }
+            &--small-last{
+                background: $colorGreen;
+                float: left;
+                @include position;
+                @include lg{
+                    width: 100%;
+                }
+                @include lg-u{
+                    width: 20%;
+                }
+            }
+        }
+        &__content{
+            &--large{
+                float: right;
+                @include position;
+                background: $colorYellow;
+                @include lg{
+                    width: 100%;
+                }
+                @include lg-u{
+                    width: 80%;
+                }
+                .content{
+                    &__item{
+                        &--position{
+                            float: left;
+                            margin: 30px 30px 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        @include position;
+        height: 50px;
+    }
+}
+div {
+    background: $colorGrey;
+}

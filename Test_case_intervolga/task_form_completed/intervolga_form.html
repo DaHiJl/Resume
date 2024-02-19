@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>    
+<body>
+    <div class="wrapper">
+        <div class="block">
+            <div class="block__item--open-form">Открыть форму</div>
+            <form class="form">
+                <img src="./svg/remove.svg" class="form__item--svg">
+                <label class="form__item--title">
+                    Транспортные средства и водители
+                </label>
+                <label class="form__item--label">
+                    Гос-номер
+                </label>
+                <input class="form__item--input field" placeholder="Укажите гос-номер" type="text" id="gos" name="gosName">
+                <label class="form__item--label">
+                    Транспортное средство
+                </label>
+                <input class="form__item--input field" placeholder="Транспортное средство" id="transport" name="transportName">
+                <label class="form__item--label">
+                    Ориентировочная дата прибытия к покупателю
+                </label>
+                <input class="form__item--input-date field" type="date" id="arrival" name="arrivalName">
+                <label class="form__item--subtitle">
+                    Данные о водителе
+                </label>
+                <label class="form__item--label">
+                    ФИО
+                </label>
+                <input class="form__item--input field" placeholder="Укажите ФИО водителя" data-mask="fio" id="fio" name="fioName">
+                <label class="form__item--label">
+                    Паспортные данные
+                </label>
+                <div class="form-block">
+                    <div class="form-block__item--position">
+                        <input class="form-block__item--input field" placeholder="Серия" type="text" data-mask="passport-series" id="passport-series" name="passportSeriesName">
+                    </div>
+                    <div class="form-block__item--position">
+                        <input class="form-block__item--input field" placeholder="Номер" type="text" data-mask="passport-number" id="passport-number" name="passportNumberName">
+                    </div>
+                </div>
+                <label class="form__item--label">
+                    Кем выдан
+                </label>
+                <input class="form__item--input field" placeholder="Кем выдан" data-mask="whom" id="whom" name="whomName">
+                <label class="form__item--label">
+                    Когда выдан
+                </label>
+                <input class="form__item--input field" placeholder="Когда выдан" data-mask="when" id="when" name="whenName">
+                <div class="form-button">
+                    <button class="form-button__item--submit" type="submit">Отправить</button>
+                    <button class="form-button__item--reset" type="reset">Отменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/inputmask.js"></script>
+    <script src="./js/imask.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

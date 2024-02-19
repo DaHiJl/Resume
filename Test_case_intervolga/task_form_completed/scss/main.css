@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.wrapper .block {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 50px 0 50px 0;
+}
+.wrapper .block__item--open-form {
+  display: none;
+  position: absolute;
+  font-size: 38px;
+  font-family: "Inconsolata", monospace;
+  padding: 24px 50px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  background: #000000;
+  color: #FFFFFF;
+}
+.wrapper .block .form {
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 2px solid #000000;
+  padding: 60px;
+  position: relative;
+}
+.wrapper .block .form__item--title {
+  font-size: 34px;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+}
+.wrapper .block .form__item--subtitle {
+  font-size: 28px;
+  padding: 0 0 20px 0;
+  font-weight: 700;
+}
+.wrapper .block .form__item--label {
+  font-size: 24px;
+  padding: 0 0 20px 0;
+}
+.wrapper .block .form__item--input {
+  font-family: "Inconsolata", monospace;
+  border: 2px solid #000000;
+  padding: 20px 16px;
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+.wrapper .block .form__item--input-date {
+  font-family: "Inconsolata", monospace;
+  border: 2px solid #000000;
+  padding: 20px 16px;
+  font-size: 18px;
+  margin: 0 0 40px 0;
+}
+.wrapper .block .form__item--svg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wrapper .block .form .form-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .block .form .form-block__item--input {
+  font-family: "Inconsolata", monospace;
+  border: 2px solid #000000;
+  padding: 20px 16px;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+.wrapper .block .form .form-block__item--position {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wrapper .block .form .form-block__item--position:first-child {
+  margin: 0 10px 0 0;
+}
+.wrapper .block .form .form-block__item--position:last-child {
+  margin: 0 0 0 10px;
+}
+.wrapper .block .form .form-button__item--submit {
+  font-family: "Inconsolata", monospace;
+  padding: 24px 50px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  font-size: 18px;
+  margin: 0 4px 0 0;
+  background: #000000;
+  color: #FFFFFF;
+}
+.wrapper .block .form .form-button__item--reset {
+  font-family: "Inconsolata", monospace;
+  padding: 24px 50px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  font-size: 18px;
+  margin: 0 0 0 4px;
+  background: #FFFFFF;
+  color: #000000;
+}
+.wrapper .block #show {
+  display: none;
+}
+.wrapper .block #open {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
