@@ -30,7 +30,7 @@
 2. Открыть файл test_case_intervolga.html в веб-браузере
 
 #Структура проекта
-- test_case_intervolga.html: Основной файл веб-приложения
+- test_case_intervolga.html: Основной файл веб-приложения. За основу взята методология Бэм
 - Папка scss состоящая из:
 	base.scss - обнуление стилей браузера
 	breakpoint.scss и vars.scss - структура адаптивной верстки
