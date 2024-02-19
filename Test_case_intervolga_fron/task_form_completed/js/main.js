@@ -5,8 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var dataForm = firstInput.form;
     var firstSevenElements = Array.prototype.slice.call(dataForm, 0, 8);
 
+
     for (var i = 0; i < firstSevenElements.length; i++){
-        
+
+        console.log(firstSevenElements[i].value)
+        console.log(firstSevenElements[i].name)
+    
         if(firstSevenElements[i].value === '') {
             firstSevenElements[i].value = window.sessionStorage.getItem(firstSevenElements[i].name) || firstSevenElements[i].value;
         }
@@ -53,21 +57,14 @@ var generatorError = function (text) {
     return error
 }
 
-// var checkFieldsPresence = function () {
-//     for (var i = 0; i < fields.length; i++) {
-//         if(!fields[i].value) {
-//             if(!fields[i].parentElement.querySelector('.error')) {
-//                 var error = generatorError('Поле должно быть заполнено!');
-//                 form[i].parentElement.insertBefore(error, fields[i]);
-//             }
-//         } else {
-//             var error = fields[i].parentElement.querySelector('.error');
-//             if(error) {
-//                 error.remove();
-//             }
-//         }
-//     }
-// }
+var checkFieldsPresence = function () {
+    for (var i = 0; i < fields.length; i++) {
+        if(!fields[i].value) {
+            var error = generatorError('Поле должно быть заполнено!')
+            form[i].parentElement.insertBefore(error, fields[i])
+        }
+    }
+}
 
 var checkGosNumber = function () {
     var gosNumberCheck =  gosNumber.value
@@ -141,7 +138,7 @@ form.addEventListener('submit', function(event) {
 
     removeValidation()
 
-    // checkFieldsPresence()
+    checkFieldsPresence()
 
     checkGosNumber()
 
